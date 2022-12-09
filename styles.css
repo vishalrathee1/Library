@@ -1,0 +1,82 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#addBook{
+  cursor: pointer;
+  background: none;
+}
+
+#addBook:hover{
+  background: aqua;
+}
+
+.lib-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.book-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+}
+
+#remove-btn{
+  width: 100px;
+  background: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#remove-btn:hover{
+  background-color: #aaa;
+}
+
+.book-modal{
+  display: block;
+  width: 25%;
+  height: 50%;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.close-modal{
+  font-size: xx-large;
+  cursor: pointer;
+  width: fit-content;
+  color: #aaa;
+}
+
+.close-modal:hover{
+  color: black;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 15px;
+}
+
+#submit-btn{
+  width: 100px;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#submit-btn:hover{
+  background-color: limegreen;
+}
+
