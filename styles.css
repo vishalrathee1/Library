@@ -43,13 +43,19 @@
 }
 
 .book-modal{
-  display: block;
+  display: none;
+  z-index: 9999;
   width: 25%;
   height: 50%;
   border: 2px solid black;
   border-radius: 5px;
   margin-top: 10px;
   padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  /* animation: 0.5s slideDown; */
 }
 
 .close-modal{

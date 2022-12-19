@@ -13,21 +13,25 @@
 <body>
   <div class="header">
     <h1 class="mainheading"> My Library</h1>
-    <p>This is a site to show the personal library of books of Vishal Rathee</p>
+    <p>This is a site to show the personal library of books of Vishal Rathee. <br>
+      This is a project for 
+            <a href="https://www.theodinproject.com/lessons/library" target="_blank">The Odin Project</a> 
+           using Object Constructors and LocalStorage.
+    </p>
     <button id="addBook"> + Add Book</button>
     <div class="book-modal">
       <div class="close-modal">&times</div>
       <div class="modal-container">
-        <form action="./index.html" method="post">
-          <label for="authorName">Name of The Author:</label>
-          <input type="text" id="authorName" name="authorName" placeholder="Robin">
+        <form id="bookForm" action="" method="POST">
           <label for="bookName">Name of The Book:</label>
-          <input type="text" id="bookName" name="authorName" placeholder="Monk who sold his ferrari">
+          <input type="text" id="bookName" name="bookName" placeholder="Monk who sold his ferrari" required>
+          <label for="authorName">Name of The Author:</label>
+          <input type="text" id="authorName" name="authorName" placeholder="Robin" required>
           <label for="pages">No. of pages:</label>
-          <input type="number" id="pages" name="pages" placeholder="100">
+          <input type="number" id="pages" name="pages" placeholder="100" min="1" required>
           <div class="read-attr">
             <label for="readTag">Have you read this Book?</label>
-            <input type="checkbox" id="readTag" name="readTag">
+            <input type="checkbox" id="readTag" name="readTag"> 
           </div>
           <button type="submit" id="submit-btn">Submit</button>
         </form>
@@ -35,7 +39,7 @@
     </div>
   </div>
   <div class="lib-container">
-    <div class="book-container">
+    <!-- <div class="book-container">
       <div class="book-name">
         Name of the Book :
       </div>
@@ -49,7 +53,7 @@
         Have you read this book?
       </div>
       <button id="remove-btn">Remove</button>
-    </div>
+    </div> -->
   </div>
 </body>
 
